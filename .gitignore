@@ -1,4 +1,4 @@
-# hidden Mac file of cached metadata when Finder is used to browse folders
+source ./venv/bin/activate# hidden Mac file of cached metadata when Finder is used to browse folders
 .DS_Store
 
 #VS Code workspace file
