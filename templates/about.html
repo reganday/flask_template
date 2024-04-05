@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %} About Us {% endblock %}
+
+{% block body %} Regan Day and Molly Siebenaler
+
+<figure>
+
+        <img
+            src="{{ url_for('static', filename='images/MollyRegan.jpg') }}"
+            alt="molly and regan working together"
+            width="800"
+            title="Molly and Regan"
+        />
+
+</figure>
+
+{% endblock %}
