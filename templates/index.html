@@ -2,4 +2,28 @@
 
 {% block title %} Welcome to the home page {% endblock %}
 
-{% block body %} Hello world! {% endblock %}
+{% block body %} Predict your salary using AI
+
+<form action="/predict" method="POST">
+    <select id="age" name="age">
+        <option value=""> -- choose age -- </option>
+        <option value="0">18-21</option>
+        <option value="1">22-24</option>
+        <option value="2">25-29</option>
+        <option value="3">30-34</option>
+        <option value="4">35-39</option>
+        <option value="5">40-44</option>
+        <option value="6">45-49</option>
+        <option value="7">50-54</option>
+        <option value="8">55-59</option>
+        <option value="9">60-69</option>
+        <option value="10">70+</option>
+    </select>
+</form>
+
+
+
+
+
+
+{% endblock %}
