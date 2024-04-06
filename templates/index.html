@@ -26,14 +26,14 @@
         <select id="gender" name="gender">
           <option value=""> -- choose gender -- </option>
           <option value="0">Man</option>
-          <option value="1">Nonbinary</option>
-          <option value="2">Prefer not to say</option>
-          <option value="3">Prefer to self-describe</option>
           <option value="4">Woman</option>
+          <option value="1">Nonbinary</option>          
+          <option value="3">Prefer to self-describe</option>
+          <option value="2">Prefer not to say</option>
         </select><br><br>
 
     <form action="/predict" method="POST">
-    <label for="country">Select your country:</label>
+    <label for="country">Country:</label>
         <select id="country" name="country">
             <option value=""> -- choose country -- </option>
             <option value="0">Algeria</option>
@@ -100,31 +100,32 @@
             <label for="highest_deg">Highest Degree:</label>
             <select id="highest_deg" name="highest_deg">
               <option value=""> -- choose highest degree obtained -- </option>
-              <option value="0">Bachelor's degree</option>
-              <option value="1">Doctoral degree</option>
-              <option value="2">I prefer not to answer</option>
-              <option value="3">Master's degree</option>
               <option value="4">No formal education past high school</option>
-              <option value="5">Professional doctorate</option>
               <option value="6">Some college/university study without earning a bachelor's degree</option>
+              <option value="0">Bachelor's degree</option>
+              <option value="3">Master's degree</option>
+              <option value="1">Doctoral degree</option>
+              <option value="5">Professional doctorate</option>  
+              <option value="2">I prefer not to answer</option>          
             </select><br><br>
 
 
         <form action="/predict" method="POST">
-          <label for="code_experience">Select your code experience:</label>
+          <label for="code_experience">Coding Experience:</label>
           <select id="code_experience" name="code_experience">
               <option value=""> -- choose code experience -- </option>
-              <option value="0">1-3 years</option>
-              <option value="1">10-20 years</option>
-              <option value="2">20+ years</option>
+              <option value="0">Less than 1 year</option>
+              <option value="5">1-3 years</option>
               <option value="3">3-5 years</option>
               <option value="4">5-10 years</option>
-              <option value="5"> Less than 1 year</option>
+              <option value="1">10-20 years</option>
+              <option value="2">20+ years</option>
+
               <option value="6">I have never written code</option>
           </select><br><br>
 
         <form action="/predict" method="POST">
-            <label for="current_title">Current Job Title:</label><br>
+            <label for="current_title">Current Title:</label>
             <select id="current_title" name="current_title">
               <option value=""> -- choose current job title -- </option>
               <option value="0">Data Administrator</option>
@@ -144,12 +145,17 @@
             </select><br><br>
           </form>
           
-
+          <form action="/predict" method="POST">
+          <label for="company_size">Company Size:</label>
+          <select id="company_size" name="company_size">
+              <option value=""> -- choose company size -- </option>
+              <option value="0">0-49 employees</option>
+              <option value="1">50-249 employees</option>
+              <option value="2">250-999 employees</option>
+              <option value="3">1000-9,999 employees</option>
+              <option value="4">10,000 or more employees</option>
+          </select>
 </form>
-
-
-
-
 
 
 {% endblock %}
