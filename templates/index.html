@@ -20,6 +20,7 @@
         <option value="9">60-69</option>
         <option value="10">70+</option>
     </select>
+    
     <br><br>
     <form action="/process" method="POST">
         <label for="gender">Gender:</label>
@@ -31,9 +32,10 @@
           <option value="3">Prefer to self-describe</option>
           <option value="4">Woman</option>
         </select>
-        <br><br>
-        <form action="/process" method="POST">
-        <label for="country">Select your country:</label>
+    <br><br>
+
+    <form action="/process" method="POST">
+    <label for="country">Select your country:</label>
         <select id="country" name="country">
             <option value=""> -- choose country -- </option>
             <option value="0">Algeria</option>
@@ -95,7 +97,23 @@
             <option value="56">Viet Nam</option>
             <option value="57">Zimbabwe</option>
         </select>
-          <br><br>
+        <br><br>
+
+        <form action="/process" method="POST">
+            <label for="highest_deg">Highest Degree:</label>
+            <select id="highest_deg" name="highest_deg">
+              <option value=""> -- choose highest degree obtained -- </option>
+              <option value="0">Bachelor's degree</option>
+              <option value="1">Doctoral degree</option>
+              <option value="2">I prefer not to answer</option>
+              <option value="3">Master's degree</option>
+              <option value="4">No formal education past high school</option>
+              <option value="5">Professional doctorate</option>
+              <option value="6">Some college/university study without earning a bachelor's degree</option>
+            </select><br><br>
+            <input type="submit" value="Submit">
+          </form>
+
 </form>
 
 
