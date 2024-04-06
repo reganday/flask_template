@@ -2,9 +2,10 @@
 
 {% block title %} Welcome to the home page {% endblock %}
 
-{% block body %} Predict your salary using AI
+{% block body %}
 
 <form action="/predict" method="POST">
+    <label for ="age">Age Range:</label>
     <select id="age" name="age">
         <option value=""> -- choose age -- </option>
         <option value="0">18-21</option>
@@ -19,6 +20,19 @@
         <option value="9">60-69</option>
         <option value="10">70+</option>
     </select>
+    <br><br>
+    <form action="/process" method="POST">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value=""> -- choose gender -- </option>
+          <option value="0">Man</option>
+          <option value="1">Nonbinary</option>
+          <option value="2">Prefer not to say</option>
+          <option value="3">Prefer to self-describe</option>
+          <option value="4">Woman</option>
+        </select>
+        <br><br>
+
 </form>
 
 
